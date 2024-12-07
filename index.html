@@ -3,68 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ocean Exploration</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Ocean Depth Zones</title>
+    <link rel="stylesheet" href="ex_style.css">
 </head>
 <body>
-    <div id="sticky-title" class="title">Ocean-Expo</div>
-
-    <a href="https://imgs.search.brave.com/ZuccdGMY0txbMSeihSGOJiE39WGF0p9r4DqKBd3wqL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E1L0xpZ2h0bmlu/Z1ZvbHRfRGVlcF9C/bHVlX1NlYS5qcGc"></a>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#depths">Discover the Depths</a>
-        <a href="#marine-life">Marine Life</a>
-        <a href="#technologies">Technologies</a>
-        <a href="#fun-depth">Fun Depth</a>
-        <a href="#conservation">Conservation</a>
-    </nav>
-
-    <section id="home" class="home">
-        <h1 style="color: #0d1f33;">Welcome to Ocean Exploration</h1>
-        <p style="color: #1e3b70;">Discover the wonders of the ocean, from surface to the deepest trenches.</p>
-    </section>
-
-    <section id="depths" class="depths">
-        <h1>Discover the Depths</h1>
-        <div class="depth-zone sunlight">Sunlight Zone (0-200m)</div>
-        <div class="depth-zone twilight">Twilight Zone (200-1000m)</div>
-        <div class="depth-zone midnight">Midnight Zone (1000-4000m)</div>
-        <div class="depth-zone abyss">Abyssal Zone (4000-6000m)</div>
-        <div class="depth-zone trench">Trenches (>6000m)</div>
-    </section>
-
-    <section id="marine-life" class="marine-life">
-        <h1>Marine Life Wonders</h1>
-        <div class="grid">
-            <div class="card">
-                <img src="https://cdn.zmescience.com/wp-content/uploads/2022/04/5390366587_8946ab6327_b.jpg">
-            </div>
-            <div class="card">
-                <img src="https://w0.peakpx.com/wallpaper/93/755/HD-wallpaper-jellyfish-fish-jelly-water.jpg">
-                <p>Jellyfish: Bioluminescent beauty.</p>
-            </div>
-            <div class="card">
-                <img src="https://cdn.animalmatchup.com/images/animals/animal/colossal-squid-animal-animalmatchup.com.webp" alt="Giant Squid">
-                <p>Giant Squid: Rare and mysterious.</p>
-            </div>
+    <div class="container">
+        <div class="depth-scale">
+            <ul>
+                <li id="sunlight-zone"><strong>Sunlight Zone</strong> (0-200m)</li>
+                <li id="twilight-zone"><strong>Twilight Zone</strong> (200-1000m)</li>
+                <li id="midnight-zone"><strong>Midnight Zone</strong> (1000-4000m)</li>
+                <li id="abyssal-zone"><strong>Abyssal Zone</strong> (4000-6000m)</li>
+                <li id="trenches-zone"><strong>Trenches</strong> (>6000m)</li>
+            </ul>
         </div>
-    </section>
-
-    <section id="technologies" class="technologies">
-        <h1>Ocean Exploration Technologies</h1>
-        <p>Learn about submarines, ROVs, and other technologies that make exploration possible.</p>
-    </section>
-
-    <section id="fun-depth" class="fun-depth">
-        <h1>Fun Depth Comparison</h1>
-        <div class="item">Eiffel Tower - 300m</div>
-        <div class="item">Titanic Wreck - 3,800m</div>
-        <div class="item">Challenger Deep - 11,000m</div>
-    </section>
-
-    <section id="conservation" class="conservation">
-        <h1>Protect Our Oceans</h1>
-        <p>Explore ways to protect the ocean and its rich biodiversity.</p>
-    </section>
+        <div class="sunlight" data-zone="sunlight-zone"></div>
+        <div class="twilight" data-zone="twilight-zone"></div>
+        <div class="midnight" data-zone="midnight-zone"></div>
+        <div class="abyssal" data-zone="abyssal-zone"></div>
+        <div class="trenches" data-zone="trenches-zone"></div>
+    </div>
+    <script src="script.js"></script> 
 </body>
 </html>
