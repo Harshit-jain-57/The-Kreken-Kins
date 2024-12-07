@@ -1,1 +1,111 @@
+* {margin: 0; padding: 0;
+            box-sizing: border-box;}
+        
+        body {font-family: Arial, sans-serif;}
 
+    nav {background: #007BFF;color: white;
+        padding: 10px;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;}
+
+        /* Sticky Title at the Top */
+.title {
+    position: sticky;
+    top: 0;
+    background: rgba(0, 0, 0, 0.8); /* Slight background for readability */
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10px;
+    z-index: 1000;
+    transition: all 1s ease; /* Smooth transition */
+}
+
+/* When reaching the end of the page, center and enlarge the title */
+body.end-of-page .title {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    background: transparent; /* Remove background at center */
+    color: #007BFF;
+    animation: growTitle 1.5s ease-in-out forwards;
+}
+
+/* Keyframes for smooth growth */
+@keyframes growTitle {
+    from {
+        font-size: 2rem;
+        opacity: 1;
+    }
+    to {
+        font-size: 5rem;
+        opacity: 1;
+    }
+}
+
+
+    nav a { color: white;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;}
+
+    nav a:hover { background-color: #0056b3;
+            }
+
+    section {
+        padding: 50px; text-align: center;}
+
+        .home {
+    background: url('https://imgs.search.brave.com/ZuccdGMY0txbMSeihSGOJiE39WGF0p9r4DqKBd3wqL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy9h/L2E1L0xpZ2h0bmlu/Z1ZvbHRfRGVlcF9C/bHVlX1NlYS5qcGc') 
+        no-repeat center center/cover;
+    color: white;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+    .depths, .marine-life, .technologies, .fun-depth, .conservation 
+    {min-height: 100vh;}
+
+    .depths .depth-zone {height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;}
+
+        .sunlight { background: #00bfff; }
+        .twilight { background: #1e3b70; }
+        .midnight { background: #0d1f33; }
+        .abyss { background: #0b1120; }
+        .trench { background: black; }
+
+.grid { display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+         gap: 20px;
+        padding: 20px;}
+
+    .card { background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;}
+
+    .card img {width: 100%;
+        }
+
+       .fun-depth .item {
+            background: #007BFF;
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
