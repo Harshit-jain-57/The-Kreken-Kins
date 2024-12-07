@@ -12,5 +12,6 @@ Design Elements<br>
 https://unsplash.com/photos/a-man-riding-a-surfboard-under-water-XvO464_SeVM
 https://www.freepik.com/free-vector/empty-underwater-blue-shine-abstract-background-light-bright-clean-ocean-sea_10601804.htm#fromView=search&page=3&position=16&uuid=30c9d985-931a-4402-8601-707c67ec56e4<br>
 https://unsplash.com/photos/photo-of-underwater-1braZySlEKA<br>
+Landing Page<br>
+https://pixabay.com/videos/ocean-horizon-yellow-clouds-waves-21175/<br>
 https://pixabay.com/videos/ocean-beach-sunset-sea-atmosphere-135658/<br>
-landing page
