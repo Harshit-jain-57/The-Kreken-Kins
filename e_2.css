@@ -73,7 +73,7 @@ html, body {
     padding: 10px 15px;
     border-radius: 8px;
     font-family: Arial, sans-serif;
-    z-index: 1000;
+    z-index: 1;
     max-width: 200px;
 }
 
@@ -100,15 +100,18 @@ html, body {
 
 .depth-display {
     position: fixed;
+    width: 150px;
     bottom: 20px;
     right: 20px;
     background: rgba(0, 0, 0, 0.7);
     color: white;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
-    z-index: 1000;
-    font-size: 1.5rem;
+    z-index: 1;
+    font-size: 1.6rem;
     transition: all 0.3s ease;
+    border-radius: 12px;
+
 }
 @keyframes fadeIn {
     from {
