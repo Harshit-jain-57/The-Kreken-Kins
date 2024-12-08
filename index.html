@@ -4,25 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Depth Zones</title>
-    <link rel="stylesheet" href="ex_style.css">
+    <link rel="stylesheet" href="e_2.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <div class="depth-scale">
-            <ul>
-                <li id="sunlight-zone"><strong>Sunlight Zone</strong> (0-200m)</li>
-                <li id="twilight-zone"><strong>Twilight Zone</strong> (200-1000m)</li>
-                <li id="midnight-zone"><strong>Midnight Zone</strong> (1000-4000m)</li>
-                <li id="abyssal-zone"><strong>Abyssal Zone</strong> (4000-6000m)</li>
-                <li id="trenches-zone"><strong>Trenches</strong> (>6000m)</li>
-            </ul>
+    <div style="height: 100vh; width: 100%; position: relative;">
+        <video class="video-background" autoplay muted loop>
+            <source src="landing-page.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div style="text-align: center;margin-top: 80vh;font-size: 2rem;color:white;" class="dive-deeper">
+            <p>Dive Deeper</p>
+            <i class="bi bi-chevron-compact-down"></i>
         </div>
-        <div class="sunlight" data-zone="sunlight-zone"></div>
-        <div class="twilight" data-zone="twilight-zone"></div>
-        <div class="midnight" data-zone="midnight-zone"></div>
-        <div class="abyssal" data-zone="abyssal-zone"></div>
-        <div class="trenches" data-zone="trenches-zone"></div>
     </div>
-    <script src="script.js"></script> 
+    <section>
+        <div id="depth-display" class="depth-display">Depth: 0m</div>
+
+        <div class="container">
+            <div class="depth-scale">
+                <ul>
+                    <li id="sunlight-zone"><strong>Sunlight Zone</strong></li>
+                    <li id="twilight-zone"><strong>Twilight Zone</strong></li>
+                    <li id="midnight-zone"><strong>Midnight Zone</strong></li>
+                    <li id="abyssal-zone"><strong>Abyssal Zone</strong></li>
+                    <li id="trenches-zone"><strong>Trenches</strong></li>
+                </ul>
+            </div>
+            <div class="sunlight" data-zone="sunlight-zone">
+                <img class="animate fadeIn animate--slow" src="tortoise_image.png" alt="Image of Tortosie">
+            </div>
+            <div class="twilight" data-zone="twilight-zone">
+                <img class="tortoise" src="tortoise_image.png" alt="Image of Tortosie">
+            </div>
+            <div class="midnight" data-zone="midnight-zone">
+
+            </div>
+            <div class="abyssal" data-zone="abyssal-zone"></div>
+            <div class="trenches" data-zone="trenches-zone"></div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
