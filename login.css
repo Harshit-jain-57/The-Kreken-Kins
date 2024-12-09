@@ -25,3 +25,8 @@ a{
     left: 200px;
     top: 100px;
 }
+.login .title{
+    font-size: x-large;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
