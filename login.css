@@ -133,7 +133,7 @@ a{
 .tab{
   position: absolute;
   right: 0;
-  width: 50 0%;
+  width: 50%;
   height: 100vh;
   background-color: transparent;
   backdrop-filter: blur(10px);
