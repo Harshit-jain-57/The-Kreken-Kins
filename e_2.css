@@ -217,4 +217,12 @@ nav a:hover span{
     animation-name: slideInRight;
     animation-timing-function: ease-in;
   }
-  
+  .videochage {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
