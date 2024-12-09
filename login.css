@@ -33,3 +33,12 @@ a{
 .login .des{
     margin-bottom: 20px;
 }
+.login .group{
+    background-color: var(--border-color);
+    border-radius: 10px;
+    height: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
