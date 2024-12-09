@@ -116,13 +116,15 @@ html, body {
 @keyframes fadeIn {
     from {
         opacity: 0;
+        scale: 0.5;
     }
     to {
         opacity: 1;
+        scale: 1;
     }
 }
 .animate {
-    animation-duration: 1s;
+    animation-timeline: view(70% 5%);
     animation-fill-mode: both;
   }
   
@@ -170,3 +172,4 @@ html, body {
     animation-name: slideInRight;
     animation-timing-function: ease-in;
   }
+  
