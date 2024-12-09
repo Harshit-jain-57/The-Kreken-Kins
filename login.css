@@ -2,7 +2,7 @@
 body{
     --border-color: #fff;
     color:#222;
-    background-image: url('login_bg.webp');
+    background-image: url('images/login_bg.webp');
     font-family: Poppins;
     min-height: 100vh;
     margin: 0;
@@ -14,16 +14,14 @@ a{
     text-decoration: none;
 }
 .login{
-    background-color: #efefef;
+    background-color: rgba(91, 192, 235, 0.3);
+    backdrop-filter: blur(10px);
     width: 270px;
     text-align: center;
-    border: 2px solid var(--border-color);
     border-radius: 30px;
     padding: 50px 30px;
     box-shadow: 0 50px 150px #5553;
     position: relative;
-    left: 200px;
-    top: 100px;
 }
 .login .title{
     font-size: x-large;
@@ -128,13 +126,5 @@ a{
     font-size: small;
 }
 .login .recovery a{
-    color: #1364cf;
-}
-.tab{
-  position: absolute;
-  right: 0;
-  width: 50%;
-  height: 100vh;
-  background-color: transparent;
-  backdrop-filter: blur(10px);
+    color: #000000;
 }
