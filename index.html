@@ -6,23 +6,43 @@
     <title>Ocean Depth Zones</title>
     <link rel="stylesheet" href="e_2.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        @font-face{
+            src:url(./Paraoh.ttf);
+            font-family:Divedeeper;
+        }
+        @font-face {
+            font-family: Scale;
+            src: url(./Race\ Sport.ttf);
+        }
+        @font-face {
+            font-family: Depth;
+            src: url(./Sakana.ttf);
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="">Home<span></span></a>
+        <a href="#">Realms<span></span></a>
+        <a href="#">Donate<span></span></a>
+        <a href="login/index.html">Login<span></span></a>
+    </nav>
     <div style="height: 100vh; width: 100%; position: relative;">
         <video class="video-background" autoplay muted loop>
             <source src="landing-page.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div style="text-align: center;margin-top: 80vh;font-size: 2rem;color:white;" class="dive-deeper">
-            <p>Dive Deeper</p>
+            <p style="font-family: Divedeeper;font-size: 2.5rem;">Dive Deeper</p>
             <i class="bi bi-chevron-compact-down"></i>
         </div>
     </div>
     <section>
-        <div id="depth-display" class="depth-display">Depth: 0m</div>
+        <div id="depth-display" class="depth-display" style="font-family: Depth;">Depth: 0m</div>
 
         <div class="container">
-            <div class="depth-scale">
+            <div class="depth-scale" style="font-family: Scale;">
                 <ul>
                     <li id="sunlight-zone"><strong>Sunlight Zone</strong></li>
                     <li id="twilight-zone"><strong>Twilight Zone</strong></li>
@@ -32,14 +52,10 @@
                 </ul>
             </div>
             <div class="sunlight" data-zone="sunlight-zone">
-                <img src="tortoise_image.png" alt="Image of Tortosie">
             </div>
             <div class="twilight" data-zone="twilight-zone">
-                <img class="animate fadeIn" src="tortoise_image.png" alt="Image of Tortosie">
-                
             </div>
             <div class="midnight" data-zone="midnight-zone">
-
             </div>
             <div class="abyssal" data-zone="abyssal-zone"></div>
             <div class="trenches" data-zone="trenches-zone" style="height: 700vh;"></div>
