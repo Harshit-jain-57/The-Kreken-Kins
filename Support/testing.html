@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Us</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        @font-face {
+            font-family: font;
+            src: url(./Carnevalee\ Freakshow.ttf);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(120deg, #0077b6, #90e0ef);
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+
+        .container {
+            padding: 50px 20px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .scan {
+            position: relative;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+
+        .scan .qrcode {
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background: url('qr_code1.png');
+            background-size: cover;
+        }
+
+        .scan .qrcode::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 20px;
+            background: url('qr_code2.png');
+            background-size: cover;
+            overflow: hidden;
+            animation: animate 4s ease-in-out infinite;
+        }
+
+        @keyframes animate {
+            0%, 100% {
+                height: 20px;
+            }
+            50% {
+                height: calc(100% - 20px);
+            }
+        }
+
+        .scan .qrcode::after {
+            content: '';
+            position: absolute;
+            inset: 20px;
+            width: calc(100% - 40px);
+            height: 2px;
+            background: #35fd5c;
+            filter: drop-shadow(0 0 20px #35fd5c) drop-shadow(0 0 60px #35fd5c);
+            animation: animateLine 4s ease-in-out infinite;
+        }
+
+        @keyframes animateLine {
+            0% {
+                top: 20px;
+            }
+            50% {
+                top: calc(100% - 20px);
+            }
+        }
+
+        .scan h3 {
+            color: #fff;
+            letter-spacing: 2px;
+            margin-top: 20px;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 60px #fff);
+            animation: animateText 0.5s steps(1) infinite;
+        }
+
+        @keyframes animateText {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+        }
+
+        .donate-button {
+            display: inline-block;
+            background-color: #00b4d8;
+            color: #fff;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            border: none;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+
+        .donate-button:hover {
+            background-color: #0096c7;
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .cards-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background-color: #023e8a;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: left;
+            width: 300px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        .card h3 {
+            color: #90e0ef;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            line-height: 1.5;
+            color: #d8f3dc;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px 10px;
+            }
+
+            h1 {
+                font-size: 2rem;
+                font-family:'font';
+            }
+
+            .cards-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 style="font-family: font;font-size: 75px;color: black;">Dive Into the Deep!</h1>
+        <p>Your donation helps us explore the mysteries of the ocean, protect marine life, and bring mythical creatures to life.</p>
+        
+        <div class="scan">
+            <div class="qrcode"></div>
+            <h3>QR Code Scanning...</h3>
+        </div>
+
+        <a href="https://youtube.com/shorts/24OigpoCy2g?feature=shared" class="donate-button">Donate Now</a>
+        <div class="cards-container">
+            <div class="card">
+                <video style="width: 100%;" src="images/sub.mov" autoplay muted loop></video>
+                <h3>Marine Research</h3>
+                <p>Help us uncover new species and study the depths of the ocean.</p>
+            </div>
+            <div class="card">
+                <video style="width: 100%;" src="images/sub2.mov" autoplay muted loop></video>
+                <h3>Protect Coral Reefs</h3>
+                <p>Your support aids in preserving and restoring vital marine ecosystems.</p>
+            </div>
+            <div class="card">
+                <video style="width: 100%;" src="images/sub3.mov" autoplay muted loop></video>
+                <h3>Mythical Discoveries</h3>
+                <p>Join us as we explore legends and lore beneath the waves.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
