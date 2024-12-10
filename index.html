@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Depth Zones</title>
     <link rel="stylesheet" href="e_2.css">
+    <link rel="icon" type="image/png" href="Realms/images/favicon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+        @font-face {
+            font-family: The Kraken;
+            src: url(Astroz\ Trial.ttf);
+        }
         @font-face{
             src:url(./Paraoh.ttf);
-            font-family:Divedeeper;
+            font-family: Divedeeper;
         }
         @font-face {
             font-family: Scale;
@@ -23,19 +28,22 @@
 </head>
 <body>
     <nav>
-        <a href="">Home<span></span></a>
+        <img src="Realms/images/favicon.png" style="height: 75px; position: absolute;left: 20px;border-radius: 50%;">
+        <h1 style="font-family: The Kraken;left:120px;position: absolute;color: white;font-size: 60px;">THE KRAKENS</h1>
+        <a href="./index.html">Home<span></span></a>
         <a href="Realms/index.html">Realms<span></span></a>
-        <a href="#">Donate<span></span></a>
-        <a href="login.html">Login<span></span></a>
+        <a href="./Kreken kin/index.html">Kraken Kins<span></span></a>
+        <a href="#">Support Us<span></span></a>
+        <a href="login/index.html" target="_blank">Login<span></span></a>
     </nav>
     <div style="height: 100vh; width: 100%; position: relative;">
         <video class="video-background" autoplay muted loop>
-            <source src="images/landing-page.mp4" type="video/mp4">
+            <source src="landing-page.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         <div style="text-align: center;margin-top: 80vh;font-size: 2rem;color:white;" class="dive-deeper">
             <p style="font-family: Divedeeper;font-size: 2.5rem;">Dive Deeper</p>
-            <i class="bi bi-chevron-compact-down"></i>
+            <i class="bi bi-chevron-compact-down" style="font-size: 2em;"></i>
         </div>
     </div>
     <section>
@@ -51,65 +59,18 @@
                     <li id="trenches-zone"><strong>Trenches</strong></li>
                 </ul>
             </div>
-                        <div class="sunlight" data-zone="sunlight-zone">
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/DOLPHIN.MP4" type="video/mp4" >
-                </video>             
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/plastic.mov" type="video/mp4" >
-                </video>         
+            <div class="sunlight" data-zone="sunlight-zone">
             </div>
             <div class="twilight" data-zone="twilight-zone">
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/turtleyes.mp4" type="video/mp4" >
-                </video>
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/coralreefyes.mp4" type="video/mp4" >
-                </video>  
             </div>
             <div class="midnight" data-zone="midnight-zone">
-                <video class="videochange" autoplay muted loop>
-                    <source src="imagesjellyyes.mp4" type="video/mp4" >
-                </video> 
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/combjelliesyes.mov" type="video/mp4" >
-                </video> 
             </div>
-            <div class="abyssal" data-zone="abyssal-zone">
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/bloodybellyyes copy.mp4" type="video/mp4" >
-                </video> 
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/glassoctopusyes.mp4" type="video/mp4" >
-                </video> 
-            </div>
-            <div class="trenches" data-zone="trenches-zone" style="height: 700vh;">
-                <video class="videochange" autoplay muted loop>
-                    <source src="images/sphinoyes.mp4" type="video/mp4" >
-                </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/squidyes.mp4" type="video/mp4" >
-            </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/dumbo-octoyes.mp4" type="video/mp4" >
-            </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/anglerfishyes.mp4" type="video/mp4" >
-            </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/anguiliformyes.mov" type="video/mp4" >
-            </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/blackchinyes.mov" type="video/mp4" >
-            </video> 
-            <video class="videochange" autoplay muted loop>
-                <source src="images/plastic" type="video/mp4" >
-            </video> 
-            </div>
-
+            <div class="abyssal" data-zone="abyssal-zone"></div>
+            <div class="trenches" data-zone="trenches-zone" style="height: 700vh;"></div>
         </div>
         
     </section>
     <script src="script.js"></script>
 </body>
 </html>
+
