@@ -13,8 +13,8 @@ nav{
     justify-content: flex-end;
     width: 100%;
     min-height: 10%;
-    background-color:rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(20px);
+    background-color:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(100px);
 
     align-items: center;
     z-index: 10;
@@ -22,7 +22,7 @@ nav{
 nav a{
     margin-right: 20px;
     position: relative;
-    font-size: 1.1em;
+    font-size: 1.3em;
     color: #c2bdbd;
     text-decoration: none;
     padding: 6px 20px ;
@@ -62,7 +62,6 @@ nav a:hover span{
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
-    /* font-size: 50rem; */
     font-family: Arial, sans-serif;
     color: white;
     cursor: pointer;
@@ -113,7 +112,7 @@ nav a:hover span{
     cursor: pointer;
     position: fixed;
     top: 40%;
-    left: 0px;
+    left: 20px;
     color: white;
     padding: 10px 15px;
     border-radius: 8px;
@@ -136,7 +135,7 @@ nav a:hover span{
 
 .depth-scale li.active {
     color: #00bfff;
-    transform: scale(1.1);
+    transform: scale(1.3);
 }
 
 .depth-scale strong {
@@ -217,12 +216,8 @@ nav a:hover span{
     animation-name: slideInRight;
     animation-timing-function: ease-in;
   }
-  .videochage {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
-    z-index: -1;
-}
+  .name_and_logo{
+    align-self: flex-start;
+    justify-content: flex-start;
+  }
+  
